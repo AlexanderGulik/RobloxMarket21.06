@@ -1,0 +1,158 @@
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: #ffffff;
+  top: 0;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 2000;
+  transition: background-color 0.3s ease;
+}
+
+.HeaderContainerStatic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: #ffffff;
+  padding: 0 40px;
+  background-color: black;
+  top: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+.HeaderContainerTransparent {
+  background-color: transparent;
+}
+.HeaderContainerScrolled {
+  background-color: black;
+}
+
+.HeaderButtons {
+  display: flex;
+  align-items: center;
+}
+.HeaderButtons button {
+  background-color: #ffffff;
+  padding: 0 30px;
+  margin-left: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.HeaderButtons .BlueColor {
+  background-color: #00c03a;
+  color: #ffffff;
+}
+
+.HeaderButtons .BlueColor a {
+  color: #ffffff;
+}
+
+.NavFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.NavFlex li,
+.NavFlex li a {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: color 0.1s linear;
+}
+
+.NavFlex li:hover,
+.NavFlex li a:hover {
+  color: rgb(228, 228, 228);
+}
+
+.NavItem {
+  padding: 0 15px;
+  color: white;
+}
+
+.NavItem a {
+  color: white;
+}
+
+.HeaderImg {
+  max-width: 100px;
+  height: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.ButtonsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Menu {
+  display: none;
+}
+
+@media (max-width: 1490px) {
+  .LogoContainer {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .Nav {
+    display: none;
+  }
+
+  .HeaderButtons button {
+    margin-left: 30px;
+  }
+
+  .Menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .BlueColor {
+    display: none;
+  }
+
+  .HeaderContainer {
+    padding: 0 10px;
+  }
+
+  .HeaderContainerStatic {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .HeaderImg {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .HeaderButtons button {
+    padding: 0 20px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .HeaderImg {
+    max-width: 100px;
+  }
+}

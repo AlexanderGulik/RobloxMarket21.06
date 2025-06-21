@@ -1,0 +1,38 @@
+.CompactInput {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.CompactInput input {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+
+.InputButton {
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.InputButton:hover {
+  background-color: #ddd;
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  font-size: 1em;
+  min-width: 2ch;
+  text-align: center;
+  box-sizing: border-box;
+  transition: width 0.2s ease;
+}

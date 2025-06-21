@@ -1,0 +1,75 @@
+.numberInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.numberInputButton {
+  font-weight: 300;
+  align-items: center;
+  color: #ff7700;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  outline: none;
+  background-color: white;
+}
+
+.numberInputField {
+  border: none;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  -moz-appearance: textfield;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.numberInputField::-webkit-outer-spin-button,
+.numberInputField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .numberInputButton {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .numberInput {
+    margin-bottom: 10px;
+  }
+
+  .numberInputField {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .numberInputButton {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .numberInput {
+    margin-bottom: 10px;
+  }
+
+  .numberInputField {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .numberInputButton {
+    font-size: 20px;
+    padding: 6px;
+  }
+}

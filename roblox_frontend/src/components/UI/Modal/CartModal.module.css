@@ -1,0 +1,153 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.062);
+  z-index: 2999;
+}
+
+.CartModalContainer {
+  position: fixed;
+  z-index: 3000;
+  height: 100%;
+  width: 550px;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 30px;
+  overflow: auto;
+}
+
+.CartTitleContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.CartTitle h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.CloseButton {
+  cursor: pointer;
+  border-radius: 50%;
+
+  transition: background-color 0.1s ease-in-out;
+}
+
+.CartList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.CartItem {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.CartItemTitle {
+  font-weight: 600;
+}
+
+.CartItemCost {
+  white-space: nowrap;
+}
+
+.CartItemImage img {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.CloseButton:hover {
+  background-color: rgba(0, 0, 0, 0.027);
+}
+
+.HorizontalLine {
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.CartCost {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: end;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.CartItemFlex {
+  display: flex;
+  gap: 15px;
+}
+
+.CartButton button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  padding: 20px 0;
+  background-color: black;
+}
+
+.CartEmpty {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+@media (max-width: 560px) {
+  .CartTitle h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .CartModalContainer {
+    width: 100%;
+  }
+
+  .CartItem {
+    gap: 20px;
+  }
+
+  .CartItemInfo {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .CloseButton:hover {
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+}
+
+@media (pointer: coarse) {
+  .CloseButton:active {
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+}

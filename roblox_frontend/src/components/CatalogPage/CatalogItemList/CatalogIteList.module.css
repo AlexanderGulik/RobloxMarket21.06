@@ -1,0 +1,32 @@
+.PaginationContainer {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.CatalogItemsContainer {
+  min-height: 33vh;
+}
+
+.NoItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.NoItems h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 2rem;
+}
+
+.NoItems p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(129, 129, 129);
+}

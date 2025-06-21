@@ -1,0 +1,49 @@
+.table {
+  margin-top: 20px;
+  width: 100%;
+}
+.manager {
+  padding: 20px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 600px;
+}
+
+.Image {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.ImageChange {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.ImageChange input {
+  width: fit-content;
+}
+
+@media (max-width: 1100px) {
+  .ImageChange {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .ImageChange img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .table {
+    min-width: 100%;
+  }
+}

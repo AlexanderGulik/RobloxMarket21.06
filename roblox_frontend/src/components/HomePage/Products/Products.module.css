@@ -1,0 +1,146 @@
+.ProductsContainer {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1150px;
+}
+
+.ProductsList {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-gap: 25px;
+}
+
+.ProductsTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.CategoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.CategoryListItem {
+  cursor: pointer;
+  margin: 12.5px;
+}
+
+.GetButton {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.UploadButton {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0px 15px 0px 15px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.NoItems {
+  text-align: center;
+  font-weight: 700;
+  line-height: 78px;
+  font-size: 25px;
+  color: rgb(143, 143, 143);
+}
+
+.AlertContainer {
+  position: fixed;
+  width: 400px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.AlertContainerItem {
+  margin: 20px;
+}
+
+@media (max-width: 1200px) {
+  .ProductsContainer {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ProductsContainer {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .ProductsList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .ProductsContainer {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .ProductsTitle {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 700px) {
+  .AlertContainer {
+    width: 90%;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .AlertContainerItem {
+    margin: 10px;
+  }
+
+  .ProductsContainer {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .ProductsTitle {
+    font-size: 38px;
+  }
+  .ProductsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .ProductsContainer {
+    width: 95%;
+  }
+
+  .ProductsList {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ProductsTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ProductsContainer {
+    width: 95%;
+  }
+  .ProductsTitle {
+    font-size: 30px;
+  }
+}

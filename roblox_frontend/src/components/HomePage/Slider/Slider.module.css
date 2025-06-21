@@ -1,0 +1,132 @@
+.SliderTitle {
+  font-size: 50px;
+  text-align: center;
+  line-height: 78px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.Flex {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slidesContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.review {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.nickname {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Кнопки управления */
+.prevButton,
+.nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8e8e8;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 20px;
+}
+
+@media (max-width: 580px) {
+  .SliderTitle {
+    font-size: 42px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .review {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .nickname {
+    font-size: 18px;
+  }
+
+  .prevButton,
+  .nextButton {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .SliderTitle {
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+
+  .avatar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .review {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .nickname {
+    font-size: 14px;
+  }
+
+  .prevButton,
+  .nextButton {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}

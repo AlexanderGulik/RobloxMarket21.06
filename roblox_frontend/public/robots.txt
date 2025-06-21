@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /catalog
+Allow: /termofuse
+Allow: /privacypolicy
+Allow: /login
+Allow: /registration
+Disallow: /adminpanel/
+Disallow: /adminpanel
+Disallow: /profile
+Disallow: /payment
+Disallow: /api/
+Disallow: /api
+
+Sitemap: https://roblox-market.ru/sitemap.xml

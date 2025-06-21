@@ -1,0 +1,53 @@
+.Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Image:hover {
+  transform: scale(1.05);
+}
+
+.form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.InputImage {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 2px dashed #3498db;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.InputImage:hover {
+  background-color: rgba(52, 152, 219, 0.05);
+  border-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .form {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .Image {
+    max-width: 150px !important;
+    max-height: 150px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .Image {
+    max-width: 120px !important;
+    max-height: 120px !important;
+  }
+}

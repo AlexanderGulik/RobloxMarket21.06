@@ -1,0 +1,202 @@
+.CartContainer {
+  width: 1000px;
+  height: 50%;
+}
+
+.CartTitle h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.CartList {
+  width: 100%;
+  max-height: 500px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.CloseButton {
+  cursor: pointer;
+}
+
+.CartItem {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.CartItemTitle {
+  font-weight: 600;
+}
+
+.CartItemCost {
+  white-space: nowrap;
+}
+
+.CartItemImage img {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.CartCost {
+  margin: 5% 0;
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.CartItemFlex {
+  display: flex;
+  gap: 15px;
+}
+
+.CartEmpty {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.HorizontalLine {
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+@media screen and (max-width: 1600px) {
+  .CartContainer {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .CartContainer {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .CartTitle h2 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CartTitle h2 {
+    font-size: 20px;
+  }
+
+  .CartItemImage img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .CartCost {
+    font-size: 16px;
+  }
+
+  .CartEmpty {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .CartTitle h2 {
+    font-size: 18px;
+  }
+
+  .CartItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .CartItemFlex {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .CartItemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .CartItemTitle {
+    font-size: 14px;
+  }
+
+  .CartItemCost {
+    font-size: 14px;
+  }
+
+  .CartItemImage img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .CartCost {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .CartEmpty {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .CartTitle h2 {
+    font-size: 16px;
+  }
+
+  .CartItemTitle {
+    font-size: 13px;
+  }
+
+  .CartItemCost {
+    font-size: 13px;
+  }
+
+  .CartItemImage img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .CartCost {
+    font-size: 14px;
+  }
+
+  .CartEmpty {
+    font-size: 16px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .CloseButton:hover {
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+}
+
+@media (pointer: coarse) {
+  .CloseButton:active {
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+}

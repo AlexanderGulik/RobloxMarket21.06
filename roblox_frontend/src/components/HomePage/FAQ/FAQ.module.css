@@ -1,0 +1,144 @@
+.faqContainer {
+  margin: 0 auto;
+  width: 760px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faqContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 135, 24);
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.faqItem {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.questionContainer {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.question {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  width: 80%;
+  color: black;
+}
+
+.icon {
+  font-size: 18px;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.answerContainer {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.active {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.answer {
+  margin: 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.StateSign {
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  background-color: #97ff42;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  border-radius: 20px;
+  transform: rotate(0);
+  font-weight: 300;
+
+  transition:
+    background-color 0.2s linear,
+    transform 0.2s linear;
+}
+
+.StateSign:hover {
+  background-color: #409000;
+}
+
+.SignActive {
+  transform: rotate(-45deg);
+}
+
+.HorizontalLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 1%, #dadaec 30%, #dadaec 70%, transparent 99%);
+}
+
+@media (max-width: 768px) {
+  .faqContainer {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .faqContainer h2 {
+    font-size: 32px;
+  }
+
+  .question {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+  .faqContainer {
+    padding: 5px;
+  }
+
+  .StateSign {
+    user-select: none;
+    width: 35px;
+    height: 35px;
+    background-color: #97ff42;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faqContainer h2 {
+    font-size: 24px;
+  }
+  .question {
+    font-size: 16px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+}

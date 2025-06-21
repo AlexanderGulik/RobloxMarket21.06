@@ -1,0 +1,51 @@
+.table {
+  margin-top: 20px;
+}
+
+.navigation {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navLink {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: #f5f5f5;
+}
+
+.active {
+  border-bottom: 2px solid #000;
+  color: #000;
+  font-weight: 600;
+}
+
+.greyDot {
+  width: 8px;
+  height: 8px;
+  background-color: #808080;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.greenDot {
+  width: 8px;
+  height: 8px;
+  background-color: #1e811b;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.redDot {
+  width: 8px;
+  height: 8px;
+  background-color: #e21c1c;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,36 @@
+.stringContainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.stringContent {
+  display: inline-block;
+  animation: stringAnim 50s linear infinite;
+  width: max-content;
+}
+
+.stringContent span {
+  font-size: 18px;
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+.stringContent span::before {
+  content: url('data:image/svg+xml,%3Csvg%20role%3D%22presentation%22%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%2010%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%225.11351%22%20cy%3D%224%22%20rx%3D%224.16918%22%20ry%3D%224%22%20fill%3D%22%23002939%22%3E%3C%2Fellipse%3E%3C%2Fsvg%3E');
+  color: black;
+  position: absolute;
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: -0.8em;
+}
+
+@keyframes stringAnim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

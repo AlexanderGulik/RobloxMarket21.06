@@ -1,0 +1,130 @@
+.table {
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.input,
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  min-width: 200px;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.Image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.Image:hover {
+  transform: scale(1.05);
+}
+
+.ImageChange {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ImageChange input {
+  width: fit-content;
+}
+
+@media (max-width: 1100px) {
+  .ImageChange {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .ImageChange img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .input,
+  .select {
+    min-width: 180px;
+  }
+
+  .ImageChange {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input,
+  .select {
+    min-width: 150px;
+    padding: 6px;
+    margin: 6px;
+  }
+
+  .label {
+    margin: 6px;
+  }
+
+  .table {
+    margin: 12px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .input,
+  .select {
+    min-width: 150px;
+    padding: 4px;
+    margin: 4px;
+    font-size: 14px;
+  }
+
+  .label {
+    margin: 4px;
+    font-size: 14px;
+  }
+
+  .table {
+    margin: 8px 0;
+  }
+
+  .ImageChange {
+    gap: 4px;
+  }
+
+  .Image {
+    max-width: 60px !important;
+  }
+
+  input[type='file'] {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .input,
+  .select {
+    min-width: 100px;
+  }
+
+  .table {
+    margin: 4px 0;
+  }
+
+  .Image {
+    max-width: 50px !important;
+  }
+}

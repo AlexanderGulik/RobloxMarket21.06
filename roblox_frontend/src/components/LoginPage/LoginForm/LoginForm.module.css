@@ -1,0 +1,27 @@
+.SectionContainer {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Error {
+  color: red;
+  text-align: center;
+}
+
+.RegLink {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.RegLink a {
+  color: #ff9800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.RegLink a:hover {
+  text-decoration: underline;
+  color: #e65100;
+}

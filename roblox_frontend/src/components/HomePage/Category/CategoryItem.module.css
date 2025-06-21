@@ -1,0 +1,78 @@
+.CategoryItemContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(104, 163, 252);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.CategoryItemContainer h2 {
+  color: white;
+  font-size: 28px;
+  z-index: 1;
+  filter: brightness(100%);
+  padding: 0 10px;
+}
+
+.CategoryItemContainer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.CategoryItemContainer:hover::before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .CategoryItemContainer h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .CategoryItemContainer h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .CategoryItemContainer h2 {
+    font-size: 16px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .CategoryItemContainer:hover {
+    transform: scale(1.05);
+  }
+
+  .CategoryItemContainer:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (pointer: coarse) {
+  .CategoryItemContainer:active {
+    transform: scale(1.05);
+  }
+
+  .CategoryItemContainer:active::before {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,182 @@
+.ProfileSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userInfo {
+  margin-bottom: 30px;
+}
+
+.infoItemText {
+  color: black;
+  word-break: break-all;
+}
+
+.userInfo h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #000000;
+}
+
+.infoItem {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #00c03a;
+}
+
+.ordersSection {
+  margin-top: 20px;
+}
+
+.ordersSection h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.ordersList {
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.orderItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.orderDetails {
+  margin-top: 10px;
+}
+
+.orderDetails ul {
+  list-style: none;
+  padding: 0;
+}
+
+.orderDetails li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.orderTotal {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.greyDot {
+  width: 8px;
+  height: 8px;
+  background-color: #808080;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.greenDot {
+  width: 8px;
+  height: 8px;
+  background-color: #1e811b;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.redDot {
+  width: 8px;
+  height: 8px;
+  background-color: #e21c1c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.OrdersError {
+  font-size: 22px;
+}
+
+.orderItemsList {
+  margin-top: 10px;
+}
+
+.orderTotalAmount {
+  order: 1;
+}
+
+.orderTotalStatus {
+  order: 2;
+}
+@media (max-width: 760px) {
+  .userInfo h2 {
+    font-size: 24px;
+  }
+
+  .infoItem {
+    font-size: 18px;
+  }
+
+  .ordersSection h3 {
+    font-size: 24px;
+  }
+  .OrdersError {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .orderHeader {
+    flex-direction: column;
+
+    & span {
+      margin-bottom: 10px;
+    }
+  }
+
+  .orderTotal {
+    flex-direction: column;
+  }
+
+  .orderTotalAmount {
+    order: 2;
+  }
+
+  .orderTotalStatus {
+    order: 1;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoItemText {
+    display: block;
+  }
+}

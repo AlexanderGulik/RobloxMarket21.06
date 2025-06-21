@@ -1,0 +1,123 @@
+.ClassicButton {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 35px 0 35px;
+  height: 56px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0 30px;
+  margin-left: 10px;
+
+  transition: all 0.1s linear;
+}
+
+.SecondButton {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 35px 0 35px;
+  height: 56px;
+  background-color: #ffbf45;
+  color: white;
+  border: none;
+  padding: 0 30px;
+  margin-left: 10px;
+
+  transition: all 0.1s linear;
+}
+
+.BuyButton {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0px 15px 0px 15px;
+  height: 45px;
+  background-color: #f85416;
+  color: white;
+  border: none;
+  margin-left: 10px;
+
+  transition: background-color 0.1s linear;
+}
+
+@media (max-width: 1490px) {
+}
+
+@media (max-width: 1024px) {
+  .BuyButton {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .ClassicButton {
+    font-size: 14px;
+  }
+
+  .SecondButton {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 580px) {
+  .ClassicButton {
+    font-size: 12px;
+    height: 48px;
+    padding: 0 25px 0 25px;
+  }
+
+  .SecondButton {
+    height: 48px;
+    font-size: 12px;
+    padding: 0 25px 0 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .ClassicButton {
+    font-size: 10px;
+    height: 40px;
+    padding: 0 25px 0 25px;
+  }
+
+  .SecondButton {
+    height: 40px;
+    font-size: 10px;
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .BuyButton:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .SecondButton:hover {
+    background-color: #00c03a;
+  }
+
+  .ClassicButton:hover {
+    background-color: #00c03a;
+    color: white;
+  }
+}
+
+@media (pointer: coarse) {
+  .BuyButton:active {
+    background-color: black;
+    color: white;
+  }
+
+  .ClassicButton:active {
+    background-color: #00c03a;
+    color: white;
+  }
+
+  .SecondButton:active {
+    background-color: #29b7ce;
+  }
+}

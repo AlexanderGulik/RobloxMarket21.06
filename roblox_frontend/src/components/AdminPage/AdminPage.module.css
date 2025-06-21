@@ -1,0 +1,17 @@
+.adminPanel {
+  display: flex;
+  height: auto;
+  background-color: rgb(247, 247, 247);
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-x: auto;
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,65 @@
+.UserMenuButton {
+  cursor: pointer;
+}
+
+.burgerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu {
+  border-top: black solid 2px;
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.menu.open {
+  display: block;
+  transform: translateY(-);
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  width: fit-content;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.menuItemRed {
+  color: red;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menuItem:hover {
+    color: rgb(158, 75, 144);
+  }
+}
+
+@media (pointer: coarse) {
+  .menuItem:active {
+    color: rgb(158, 75, 144);
+  }
+}
